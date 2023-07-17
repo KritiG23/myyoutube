@@ -1,0 +1,15 @@
+
+.body-cont{
+  width:  calc(100% - 240px);
+}
+.videoList{
+  display: flex;
+  margin-bottom: 40px;
+  margin-left: calc(var(--list-margin)/2);
+  margin-right: calc(var(--list-margin)/2);
+  width: calc(100% / var(--grid-items-per-row) - var(--list-margin) - 0.01px);
+}
+
+.videoText{
+  width: calc(100% - 32px - 0.5em);
+}

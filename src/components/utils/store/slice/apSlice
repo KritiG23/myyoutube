@@ -1,0 +1,17 @@
+const { createSlice } = require("@reduxjs/toolkit");
+
+ const apSlice = createSlice({
+    name: "toggle",
+    initialState: {
+        isMenuOpen: true
+    },
+    reducers :{
+        toggleMenu : (state) => {
+            state.isMenuOpen = !state.isMenuOpen
+        }
+
+    }
+ })
+ export const {toggleMenu} = apSlice.actions;
+
+ export default apSlice.reducer
